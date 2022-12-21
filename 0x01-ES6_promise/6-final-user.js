@@ -12,10 +12,10 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
     // Call the signUpUser() and uploadPhoto() functions
     signUpUser(firstName, lastName),
     uploadPhoto(fileName),
-  ]).then((results) => results.map((result) => ({
+  ]).then((results) => results.map((out) => ({
     // When the promises are all settled it should return an array with the
     // given structure
-    status: result.status,
-    value: result.value,
+    status: out.status,
+    value: out.value,
   })));
 }
