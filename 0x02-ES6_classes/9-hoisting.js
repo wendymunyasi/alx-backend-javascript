@@ -52,7 +52,7 @@ const listOfStudents = [
   new StudentHolberton('John', 'Doe', class2020),
   new StudentHolberton('Albert', 'Clinton', class2019),
   new StudentHolberton('Donald', 'Bush', class2019),
-  new StudentHolberton('Jason', 'Sandler', class2019)
+  new StudentHolberton('Jason', 'Sandler', class2019),
 ];
 
 export default listOfStudents;
