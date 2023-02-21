@@ -1,9 +1,12 @@
 import { readDatabase } from '../utils.js';
+// const readDatabase = require('../utils.js');
+// import readDatabase from '../utils.js';
 
 export class StudentsController {
   static async getAllStudents(req, res) {
     try {
-      const fields = await readDatabase(req.app.locals.dbFilePath);
+      const dbFilePath = process.argv[2]; // Get file path from command line argument
+      const fields = await readDatabase(dbFilePath);        
       const fieldsSorted = Object.keys(fields).sort((a, b) =>
         a.localeCompare(b, undefined, { sensitivity: 'base' })
       );
@@ -30,7 +33,7 @@ export class StudentsController {
     }
     try {
       const fields = await readDatabase(req.app.locals.dbFilePath);
-      const students = fields[major] || [];
+      const students = fields[major] ? fields[major].map(name => name.split(" ")[0]) : [];
       res.status(200).send(`List: ${students.join(', ')}`);
     } catch (err) {
       res.status(500).send('Cannot load the database');
