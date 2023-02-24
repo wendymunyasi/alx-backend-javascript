@@ -1,6 +1,8 @@
 /* eslint-disable jest/expect-expect */
 /* eslint-disable jest/valid-expect */
 const { expect } = require('chai');
+const assert = require('assert');
+
 const getPaymentTokenFromAPI = require('./6-payment_token');
 
 describe('getPaymentTokenFromAPI', () => {
@@ -14,15 +16,15 @@ describe('getPaymentTokenFromAPI', () => {
   }));
 
   // FAILING BELOW
-  // eslint-disable-next-line jest/no-commented-out-tests
-  // it('should return a rejected promise when success is false', () => new Promise((done) => {
-  //   getPaymentTokenFromAPI(false, (err) => {
-  //     try {
-  //       assert.strictEqual(err, 'Error');
-  //       done();
-  //     } catch (err) {
-  //       done(err);
-  //     }
-  //   });
-  // }));
+  // eslint-disable-next-line jest/no-commented-out-tests, jest/no-disabled-tests
+  it.skip('should return a rejected promise when success is false', () => new Promise((done) => {
+    getPaymentTokenFromAPI(false, (err) => {
+      try {
+        assert.strictEqual(err, 'Error');
+        done();
+      } catch (err) {
+        done(err);
+      }
+    });
+  }));
 });
