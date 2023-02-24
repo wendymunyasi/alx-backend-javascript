@@ -1,5 +1,10 @@
+/* eslint-disable no-self-compare */
+/* eslint-disable jest/valid-expect */
+/* eslint-disable no-unused-expressions */
+/* eslint-disable jest/prefer-expect-assertions */
 const { expect } = require('chai');
 
+// eslint-disable-next-line jest/lowercase-name
 describe('Testing numbers', () => {
   it('1 is equal to 1', () => {
     expect(1 === 1).to.be.true;
@@ -9,6 +14,7 @@ describe('Testing numbers', () => {
     expect(2 === 2).to.be.true;
   });
 
+  // eslint-disable-next-line jest/no-disabled-tests
   it.skip('1 is equal to 3', () => {
     expect(1 === 3).to.be.true;
   });
