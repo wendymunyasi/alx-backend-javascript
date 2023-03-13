@@ -22,3 +22,5 @@ All of the following folders are projects done during the studies:
 | [`0x02. ES6 classes`](https://github.com/wendymunyasi/alx-backend-javascript/tree/master/0x02-ES6_classes) | It aims to learn about ES6 classes.|
 | [`0x03. ES6 data manipulation`](https://github.com/wendymunyasi/alx-backend-javascript/tree/master/0x03-ES6_data_manipulation) | It aims to learn about data manipulation using `map`, `filter` etc in **ES6**.|
 | [`0x04. Typescript`](https://github.com/wendymunyasi/alx-backend-javascript/tree/master/0x04-TypeScript) | It aims to learn about Typescript - classes, functions etc.|
+| [`0x05. NodeJS Basics`](https://github.com/wendymunyasi/alx-backend-javascript/tree/master/0x05-Node_JS_basic) | It aims to learn about the basics of **Node js**.|
+| [`0x06. Unittests in JS`](https://github.com/wendymunyasi/alx-backend-javascript/tree/master/0x06-unittests_in_js) | It aims to learn about unittests in **Node js**.|
